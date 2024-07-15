@@ -15,7 +15,7 @@
 		5926B58E2C44E7C200552E91 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 5926B58D2C44E7C200552E91 /* Storage */; };
 		5926B5902C44E7C200552E91 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5926B58F2C44E7C200552E91 /* Supabase */; };
 		5926B5922C4511BC00552E91 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926B5912C4511BC00552E91 /* CreateAccountView.swift */; };
-		5926B5942C4511EF00552E91 /* accountCreate.png in Resources */ = {isa = PBXBuildFile; fileRef = 5926B5932C4511EF00552E91 /* accountCreate.png */; };
+		592CF2E12C453DBB0058F02E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592CF2E02C453DBB0058F02E /* HomeView.swift */; };
 		5946C4AD2C413B0D008C557A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946C4AC2C413B0D008C557A /* LoginView.swift */; };
 		59D68E8C2C412AB9000BF5ED /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D68E8B2C412AB9000BF5ED /* FoodAppApp.swift */; };
 		59D68E8E2C412AB9000BF5ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D68E8D2C412AB9000BF5ED /* ContentView.swift */; };
@@ -53,7 +53,7 @@
 /* Begin PBXFileReference section */
 		5926B5812C44E39E00552E91 /* SupabaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseAuthService.swift; sourceTree = "<group>"; };
 		5926B5912C4511BC00552E91 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; usesTabs = 0; };
-		5926B5932C4511EF00552E91 /* accountCreate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = accountCreate.png; path = ../../../../Downloads/accountCreate.png; sourceTree = "<group>"; };
+		592CF2E02C453DBB0058F02E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5946C4AC2C413B0D008C557A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		59D68E882C412AB9000BF5ED /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D68E8B2C412AB9000BF5ED /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
@@ -154,8 +154,8 @@
 				5926B5912C4511BC00552E91 /* CreateAccountView.swift */,
 				59D68E8D2C412AB9000BF5ED /* ContentView.swift */,
 				59D68EB92C412D53000BF5ED /* WelcomeView.swift */,
+				592CF2E02C453DBB0058F02E /* HomeView.swift */,
 				59D68ECD2C4132AF000BF5ED /* silderView.swift */,
-				5926B5932C4511EF00552E91 /* accountCreate.png */,
 				59D68E8F2C412ABB000BF5ED /* Assets.xcassets */,
 				59D68E912C412ABB000BF5ED /* Preview Content */,
 			);
@@ -318,7 +318,6 @@
 				59D68E932C412ABB000BF5ED /* Preview Assets.xcassets in Resources */,
 				59D68EC12C412DFE000BF5ED /* Poppins-Bold.ttf in Resources */,
 				59D68ED02C4136C9000BF5ED /* Launch Screen.storyboard in Resources */,
-				5926B5942C4511EF00552E91 /* accountCreate.png in Resources */,
 				59D68EC22C412DFE000BF5ED /* Poppins-Medium.ttf in Resources */,
 				59D68E902C412ABB000BF5ED /* Assets.xcassets in Resources */,
 			);
@@ -350,6 +349,7 @@
 				59D68ECE2C4132AF000BF5ED /* silderView.swift in Sources */,
 				5926B5922C4511BC00552E91 /* CreateAccountView.swift in Sources */,
 				59D68EBA2C412D53000BF5ED /* WelcomeView.swift in Sources */,
+				592CF2E12C453DBB0058F02E /* HomeView.swift in Sources */,
 				5946C4AD2C413B0D008C557A /* LoginView.swift in Sources */,
 				59D68E8C2C412AB9000BF5ED /* FoodAppApp.swift in Sources */,
 			);
@@ -523,6 +523,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,6 +553,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
